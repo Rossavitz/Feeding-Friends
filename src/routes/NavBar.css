@@ -1,0 +1,105 @@
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #15273a;
+  color: white;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+/* Logo */
+.navbar .logo img {
+  width: 100%;
+  max-width: 500px; /* Adjust size */
+  height: auto;
+  margin-bottom: 15px;
+}
+
+/* Nav Menu */
+.nav-bar-ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+/* Nav Links */
+.navbar li {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar li a:hover {
+  color: #eedeb0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  /* Center logo */
+  .navbar {
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Adjust logo size for mobile */
+  .logo img {
+    max-width: 300px; /* Make logo smaller on mobile */
+  }
+
+  /* Nav Links (Always visible) */
+  .nav-bar-ul {
+    top: 100%;
+    left: 0;
+    padding: 15px 0;
+    border-top: 1px solid white;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* On larger screens, display links horizontally */
+@media screen and (min-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Keep logo above links */
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .logo img {
+    max-width: 300px;
+  }
+
+  .nav-bar-ul {
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    display: flex !important;
+  }
+
+  .navbar li {
+    margin-right: 15px;
+    font-size: 1.5rem;
+  }
+}

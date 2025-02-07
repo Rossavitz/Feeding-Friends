@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Image Container */
+.dinner-menu {
+  text-align: center;
+}
+
+/* Image Resizing */
+.dinner-menu img {
+  width: 40%; /* Default width */
+  max-width: 1500px; /* Max size for large screens */
+  transition: width 0.3s ease;
+  cursor: pointer;
+}
+
+/* Responsive Layout for tablets and mobile */
+@media screen and (max-width: 768px) {
+  .cards {
+    padding: 10px;
+  }
+
+  .dinner-menu img {
+    width: 95%; /* Image takes up 90% of screen width on mobile */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .dinner-menu img {
+    width: 95%; /* Make image slightly smaller on very small screens */
+  }
+}

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:5173/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="module">
+import RefreshRuntime from "/@react-refresh"
+RefreshRuntime.injectIntoGlobalHook(window)
+window.$RefreshReg$ = () => {}
+window.$RefreshSig$ = () => (type) => type
+window.__vite_plugin_react_preamble_installed__ = true
+</script>
+
+    <script type="module" src="./Vite + React + TS_files/client"></script>
+
+    
+    <link rel="icon" type="image/svg+xml" href="http://localhost:5173/vite.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./Vite + React + TS_files/css2" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vite + React + TS</title>
+  <style type="text/css" data-vite-dev-id="C:/Users/rcumm/Desktop/Repos/Feeding Friends/FeedingFriends/src/index.css">@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+body{
+    background-image: url("../photos/pexels-photo-616484.jpeg");
+    background-position: center center;
+    background-size: 100% 100%;
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/rcumm/Desktop/Repos/Feeding Friends/FeedingFriends/src/routes/NavBar.css">.navbar{
+    display:flex;
+    align-items:center;
+    padding:20px;
+    background-color: black;
+    color: white;
+  }
+
+.nav-bar-ul {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-bar-ul ul{
+    display: inline-block;
+    list-style-type: none;
+}
+
+.nav-bar-li li {
+    display: inline-block;
+    margin-right:20;
+}
+
+img{
+    width: 100px;
+}
+
+.navbar li{
+    float: right;
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.navbar li a{
+    text-decoration: none;
+}
+
+.navbar li a:visited{
+    color: inherit;
+}
+
+.navbar li a:hover{
+    color: salmon;
+}</style><style type="text/css" data-vite-dev-id="C:/Users/rcumm/Desktop/Repos/Feeding Friends/FeedingFriends/src/pages/Card.css">@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+.card-body {
+    width: 35%;
+    margin:5px;
+    padding: 5px;
+    background-color: lightgray;
+    border-radius: 3px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, .25);
+    transition: transform 0.2s ease-in-out;
+    font-size: 1.5rem;
+    font-family: 'Crimson Text';
+    font-weight: 500;
+}
+
+.card-body:hover{
+    transform: scale(1.03)
+}
+
+.card-link {
+    text-decoration: none;
+}
+
+.card-link:visited {
+    color: inherit
+}
+
+.card-link:hover{
+    color: salmon
+}
+
+.card-body img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+</style><style type="text/css" data-vite-dev-id="C:/Users/rcumm/Desktop/Repos/Feeding Friends/FeedingFriends/src/pages/Homepage.css">.card-bio .card-body{
+    display: block;
+    margin: auto;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.card-dinner .card-body{
+    display: block;
+    margin: auto;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.card-classes .card-body{
+    display: block;
+    margin: auto;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.card-pasta .card-body{
+    display: block;
+    margin: auto;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}</style><style type="text/css" data-vite-dev-id="C:/Users/rcumm/Desktop/Repos/Feeding Friends/FeedingFriends/src/photos/Slider.css">* {
+    margin: 0;
+    padding: 0;
+  }
+  
+.Slider {
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .img {
+    width: 500px;
+    height: 500px;
+    object-fit: contain;
+    display: block;
+  }
+  
+  .img-container {
+    position: relative;
+  }
+  
+  
+  .close-icon {
+    position: absolute;
+    font-size: 1.8rem;
+    top: -2rem;
+    right: 0;
+  }
+  
+  .close-icon:hover {
+    cursor: pointer;
+  }
+  
+  .btn {
+    color: salmon;
+    width: 2.8rem;
+    aspect-ratio: 1;
+    background: none;
+    border: 1px solid black;
+    font-size: 1.4rem;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s;
+    background-color: #333;
+  }
+  
+  .btn:hover {
+    cursor: pointer;
+  }
+  
+  .btn--prev {
+    left: -4rem;
+    top: 50%;
+  }
+  
+  .btn--next {
+    right: -4rem;
+  }
+  
+  .img--small {
+    width: 6.25rem;
+    filter: blur(0.1rem);
+    transition: all 0.3s;
+  }
+  
+  .img--small:hover {
+    cursor: pointer;
+    filter: blur(0);
+  }
+  
+  .active {
+    filter: blur(0);
+  }
+  </style><style type="text/css" data-vite-dev-id="C:/Users/rcumm/Desktop/Repos/Feeding Friends/FeedingFriends/src/pages/Classes.css"></style><style type="text/css" data-vite-dev-id="C:/Users/rcumm/Desktop/Repos/Feeding Friends/FeedingFriends/src/pages/Contact.css">  .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 300px; /* Adjust as needed */
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    text-align: left; /* Align labels to the left */
+    margin-bottom: 5px;
+  }
+
+  input{
+    height: 25px;
+    margin-bottom: 7px;
+  }
+
+button {
+width: 100px;
+height: 30px;
+}
+
+h2{
+  margin-bottom: 10px;
+}
+
+form p {
+  color:white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}</style><style type="text/css" data-vite-dev-id="C:/Users/rcumm/Desktop/Repos/Feeding Friends/FeedingFriends/src/App.css">body{
+    /* background-image: url("./photos/herbs2.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat; */
+    background-color: black;
+    /* width: 100%;
+    height: 100%; */
+}
+</style><style data-emotion="css" data-s="">.css-vny07m-MuiCard-root{overflow:hidden;max-width:345px;}</style><style data-emotion="css" data-s="">.css-1i3faf7-MuiPaper-root-MuiCard-root{background-color:#fff;color:rgba(0, 0, 0, 0.87);-webkit-transition:box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;border-radius:4px;box-shadow:var(--Paper-shadow);background-image:var(--Paper-overlay);overflow:hidden;max-width:345px;}</style><style data-emotion="css" data-s="">.css-149tc0y-MuiCardHeader-root{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:16px;}</style><style data-emotion="css" data-s="">.css-1r9wl67-MuiCardHeader-avatar{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex:0 0 auto;-ms-flex:0 0 auto;flex:0 0 auto;margin-right:16px;}</style><style data-emotion="css" data-s="">.css-90g1cj-MuiAvatar-root{position:relative;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;width:40px;height:40px;font-family:"Roboto","Helvetica","Arial",sans-serif;font-size:1.25rem;line-height:1;border-radius:50%;overflow:hidden;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;color:#fff;background-color:#bdbdbd;background-color:#f44336;}</style><style data-emotion="css" data-s="">.css-1jkp9bu-MuiCardHeader-content{-webkit-flex:1 1 auto;-ms-flex:1 1 auto;flex:1 1 auto;}</style><style data-emotion="css" data-s="">.MuiTypography-root:where(.css-1jkp9bu-MuiCardHeader-content .MuiCardHeader-title){display:block;}</style><style data-emotion="css" data-s="">.MuiTypography-root:where(.css-1jkp9bu-MuiCardHeader-content .MuiCardHeader-subheader){display:block;}</style><style data-emotion="css" data-s="">.css-7ctihp-MuiTypography-root{margin:0;font-family:"Roboto","Helvetica","Arial",sans-serif;font-weight:400;font-size:0.875rem;line-height:1.43;letter-spacing:0.01071em;}</style><style data-emotion="css" data-s="">.css-1a1whku-MuiTypography-root{margin:0;font-family:"Roboto","Helvetica","Arial",sans-serif;font-weight:400;font-size:0.875rem;line-height:1.43;letter-spacing:0.01071em;color:rgba(0, 0, 0, 0.6);}</style><style data-emotion="css" data-s="">.css-116l9hl-MuiCardHeader-action{-webkit-flex:0 0 auto;-ms-flex:0 0 auto;flex:0 0 auto;-webkit-align-self:flex-start;-ms-flex-item-align:flex-start;align-self:flex-start;margin-top:-4px;margin-right:-8px;margin-bottom:-4px;}</style><style data-emotion="css" data-s="">.css-1wxwvf0-MuiIconButton-root{text-align:center;-webkit-flex:0 0 auto;-ms-flex:0 0 auto;flex:0 0 auto;font-size:1.5rem;padding:8px;border-radius:50%;color:rgba(0, 0, 0, 0.54);-webkit-transition:background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;--IconButton-hoverBg:rgba(0, 0, 0, 0.04);}</style><style data-emotion="css" data-s="">.css-1wxwvf0-MuiIconButton-root:hover{background-color:var(--IconButton-hoverBg);}</style><style data-emotion="css" data-s="">@media (hover: none){.css-1wxwvf0-MuiIconButton-root:hover{background-color:transparent;}}</style><style data-emotion="css" data-s="">.css-1wxwvf0-MuiIconButton-root.Mui-disabled{background-color:transparent;color:rgba(0, 0, 0, 0.26);}</style><style data-emotion="css" data-s="">.css-aixiz9-MuiButtonBase-root-MuiIconButton-root{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;position:relative;box-sizing:border-box;-webkit-tap-highlight-color:transparent;background-color:transparent;outline:0;border:0;margin:0;border-radius:0;padding:0;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;vertical-align:middle;-moz-appearance:none;-webkit-appearance:none;-webkit-text-decoration:none;text-decoration:none;color:inherit;text-align:center;-webkit-flex:0 0 auto;-ms-flex:0 0 auto;flex:0 0 auto;font-size:1.5rem;padding:8px;border-radius:50%;color:rgba(0, 0, 0, 0.54);-webkit-transition:background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;--IconButton-hoverBg:rgba(0, 0, 0, 0.04);}</style><style data-emotion="css" data-s="">.css-aixiz9-MuiButtonBase-root-MuiIconButton-root::-moz-focus-inner{border-style:none;}</style><style data-emotion="css" data-s="">.css-aixiz9-MuiButtonBase-root-MuiIconButton-root.Mui-disabled{pointer-events:none;cursor:default;}</style><style data-emotion="css" data-s="">@media print{.css-aixiz9-MuiButtonBase-root-MuiIconButton-root{-webkit-print-color-adjust:exact;color-adjust:exact;}}</style><style data-emotion="css" data-s="">.css-aixiz9-MuiButtonBase-root-MuiIconButton-root:hover{background-color:var(--IconButton-hoverBg);}</style><style data-emotion="css" data-s="">@media (hover: none){.css-aixiz9-MuiButtonBase-root-MuiIconButton-root:hover{background-color:transparent;}}</style><style data-emotion="css" data-s="">.css-aixiz9-MuiButtonBase-root-MuiIconButton-root.Mui-disabled{background-color:transparent;color:rgba(0, 0, 0, 0.26);}</style><style data-emotion="css" data-s="">.css-1umw9bq-MuiSvgIcon-root{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;width:1em;height:1em;display:inline-block;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;-webkit-transition:fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;fill:currentColor;font-size:1.5rem;}</style><style data-emotion="css" data-s="">.css-1kuwa16-MuiCardMedia-root{display:block;-webkit-background-size:cover;background-size:cover;background-repeat:no-repeat;-webkit-background-position:center;background-position:center;width:100%;object-fit:cover;}</style><style data-emotion="css" data-s="">.css-1lt5qva-MuiCardContent-root{padding:16px;}</style><style data-emotion="css" data-s="">.css-1lt5qva-MuiCardContent-root:last-child{padding-bottom:24px;}</style><style data-emotion="css" data-s="">.css-1wle3ir-MuiTypography-root{margin:0;font-family:"Roboto","Helvetica","Arial",sans-serif;font-weight:400;font-size:0.875rem;line-height:1.43;letter-spacing:0.01071em;color:rgba(0, 0, 0, 0.6);}</style><style data-emotion="css" data-s="">.css-bbbzor-MuiCardActions-root{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:8px;}</style><style data-emotion="css" data-s="">.css-58fgxo{margin-left:auto;-webkit-transition:-webkit-transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);}</style><style data-emotion="css" data-s="">.css-k80et6-MuiIconButton-root{text-align:center;-webkit-flex:0 0 auto;-ms-flex:0 0 auto;flex:0 0 auto;font-size:1.5rem;padding:8px;border-radius:50%;color:rgba(0, 0, 0, 0.54);-webkit-transition:background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;--IconButton-hoverBg:rgba(0, 0, 0, 0.04);margin-left:auto;-webkit-transition:-webkit-transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);}</style><style data-emotion="css" data-s="">.css-k80et6-MuiIconButton-root:hover{background-color:var(--IconButton-hoverBg);}</style><style data-emotion="css" data-s="">@media (hover: none){.css-k80et6-MuiIconButton-root:hover{background-color:transparent;}}</style><style data-emotion="css" data-s="">.css-k80et6-MuiIconButton-root.Mui-disabled{background-color:transparent;color:rgba(0, 0, 0, 0.26);}</style><style data-emotion="css" data-s="">.css-17ypfk3-MuiButtonBase-root-MuiIconButton-root{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;position:relative;box-sizing:border-box;-webkit-tap-highlight-color:transparent;background-color:transparent;outline:0;border:0;margin:0;border-radius:0;padding:0;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;vertical-align:middle;-moz-appearance:none;-webkit-appearance:none;-webkit-text-decoration:none;text-decoration:none;color:inherit;text-align:center;-webkit-flex:0 0 auto;-ms-flex:0 0 auto;flex:0 0 auto;font-size:1.5rem;padding:8px;border-radius:50%;color:rgba(0, 0, 0, 0.54);-webkit-transition:background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;--IconButton-hoverBg:rgba(0, 0, 0, 0.04);margin-left:auto;-webkit-transition:-webkit-transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);}</style><style data-emotion="css" data-s="">.css-17ypfk3-MuiButtonBase-root-MuiIconButton-root::-moz-focus-inner{border-style:none;}</style><style data-emotion="css" data-s="">.css-17ypfk3-MuiButtonBase-root-MuiIconButton-root.Mui-disabled{pointer-events:none;cursor:default;}</style><style data-emotion="css" data-s="">@media print{.css-17ypfk3-MuiButtonBase-root-MuiIconButton-root{-webkit-print-color-adjust:exact;color-adjust:exact;}}</style><style data-emotion="css" data-s="">.css-17ypfk3-MuiButtonBase-root-MuiIconButton-root:hover{background-color:var(--IconButton-hoverBg);}</style><style data-emotion="css" data-s="">@media (hover: none){.css-17ypfk3-MuiButtonBase-root-MuiIconButton-root:hover{background-color:transparent;}}</style><style data-emotion="css" data-s="">.css-17ypfk3-MuiButtonBase-root-MuiIconButton-root.Mui-disabled{background-color:transparent;color:rgba(0, 0, 0, 0.26);}</style><style data-emotion="css" data-s="">.css-r3djoj-MuiTouchRipple-root{overflow:hidden;pointer-events:none;position:absolute;z-index:0;top:0;right:0;bottom:0;left:0;border-radius:inherit;}</style><style data-emotion="css" data-s="">.css-y4cjyz-MuiTouchRipple-ripple{opacity:0;position:absolute;}</style><style data-emotion="css" data-s="">.css-y4cjyz-MuiTouchRipple-ripple.MuiTouchRipple-rippleVisible{opacity:0.3;-webkit-transform:scale(1);-moz-transform:scale(1);-ms-transform:scale(1);transform:scale(1);-webkit-animation-name:animation-1taevns;animation-name:animation-1taevns;-webkit-animation-duration:550ms;animation-duration:550ms;-webkit-animation-timing-function:cubic-bezier(0.4, 0, 0.2, 1);animation-timing-function:cubic-bezier(0.4, 0, 0.2, 1);}</style><style data-emotion="css" data-s="">.css-y4cjyz-MuiTouchRipple-ripple.MuiTouchRipple-ripplePulsate{-webkit-animation-duration:200ms;animation-duration:200ms;}</style><style data-emotion="css" data-s="">.css-y4cjyz-MuiTouchRipple-ripple .MuiTouchRipple-child{opacity:1;display:block;width:100%;height:100%;border-radius:50%;background-color:currentColor;}</style><style data-emotion="css" data-s="">.css-y4cjyz-MuiTouchRipple-ripple .MuiTouchRipple-childLeaving{opacity:0;-webkit-animation-name:animation-5ich1p;animation-name:animation-5ich1p;-webkit-animation-duration:550ms;animation-duration:550ms;-webkit-animation-timing-function:cubic-bezier(0.4, 0, 0.2, 1);animation-timing-function:cubic-bezier(0.4, 0, 0.2, 1);}</style><style data-emotion="css" data-s="">.css-y4cjyz-MuiTouchRipple-ripple .MuiTouchRipple-childPulsate{position:absolute;left:0px;top:0;-webkit-animation-name:animation-f6tr5a;animation-name:animation-f6tr5a;-webkit-animation-duration:2500ms;animation-duration:2500ms;-webkit-animation-timing-function:cubic-bezier(0.4, 0, 0.2, 1);animation-timing-function:cubic-bezier(0.4, 0, 0.2, 1);-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-delay:200ms;animation-delay:200ms;}</style><style data-emotion="css" data-s="">@-webkit-keyframes animation-f6tr5a{0%{-webkit-transform:scale(1);-moz-transform:scale(1);-ms-transform:scale(1);transform:scale(1);}50%{-webkit-transform:scale(0.92);-moz-transform:scale(0.92);-ms-transform:scale(0.92);transform:scale(0.92);}100%{-webkit-transform:scale(1);-moz-transform:scale(1);-ms-transform:scale(1);transform:scale(1);}}</style><style data-emotion="css" data-s="">@keyframes animation-f6tr5a{0%{-webkit-transform:scale(1);-moz-transform:scale(1);-ms-transform:scale(1);transform:scale(1);}50%{-webkit-transform:scale(0.92);-moz-transform:scale(0.92);-ms-transform:scale(0.92);transform:scale(0.92);}100%{-webkit-transform:scale(1);-moz-transform:scale(1);-ms-transform:scale(1);transform:scale(1);}}</style><style data-emotion="css" data-s="">@-webkit-keyframes animation-5ich1p{0%{opacity:1;}100%{opacity:0;}}</style><style data-emotion="css" data-s="">@keyframes animation-5ich1p{0%{opacity:1;}100%{opacity:0;}}</style><style data-emotion="css" data-s="">@-webkit-keyframes animation-1taevns{0%{-webkit-transform:scale(0);-moz-transform:scale(0);-ms-transform:scale(0);transform:scale(0);opacity:0.1;}100%{-webkit-transform:scale(1);-moz-transform:scale(1);-ms-transform:scale(1);transform:scale(1);opacity:0.3;}}</style><style data-emotion="css" data-s="">@keyframes animation-1taevns{0%{-webkit-transform:scale(0);-moz-transform:scale(0);-ms-transform:scale(0);transform:scale(0);opacity:0.1;}100%{-webkit-transform:scale(1);-moz-transform:scale(1);-ms-transform:scale(1);transform:scale(1);opacity:0.3;}}</style><style data-emotion="css" data-s="">.css-j54wwq{margin-left:auto;-webkit-transition:-webkit-transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;-webkit-transform:rotate(180deg);-moz-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg);}</style><style data-emotion="css" data-s="">.css-1t9g5yz-MuiIconButton-root{text-align:center;-webkit-flex:0 0 auto;-ms-flex:0 0 auto;flex:0 0 auto;font-size:1.5rem;padding:8px;border-radius:50%;color:rgba(0, 0, 0, 0.54);-webkit-transition:background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;--IconButton-hoverBg:rgba(0, 0, 0, 0.04);margin-left:auto;-webkit-transition:-webkit-transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;-webkit-transform:rotate(180deg);-moz-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg);}</style><style data-emotion="css" data-s="">.css-1t9g5yz-MuiIconButton-root:hover{background-color:var(--IconButton-hoverBg);}</style><style data-emotion="css" data-s="">@media (hover: none){.css-1t9g5yz-MuiIconButton-root:hover{background-color:transparent;}}</style><style data-emotion="css" data-s="">.css-1t9g5yz-MuiIconButton-root.Mui-disabled{background-color:transparent;color:rgba(0, 0, 0, 0.26);}</style><style data-emotion="css" data-s="">.css-1grsl84-MuiButtonBase-root-MuiIconButton-root{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;position:relative;box-sizing:border-box;-webkit-tap-highlight-color:transparent;background-color:transparent;outline:0;border:0;margin:0;border-radius:0;padding:0;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;vertical-align:middle;-moz-appearance:none;-webkit-appearance:none;-webkit-text-decoration:none;text-decoration:none;color:inherit;text-align:center;-webkit-flex:0 0 auto;-ms-flex:0 0 auto;flex:0 0 auto;font-size:1.5rem;padding:8px;border-radius:50%;color:rgba(0, 0, 0, 0.54);-webkit-transition:background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;--IconButton-hoverBg:rgba(0, 0, 0, 0.04);margin-left:auto;-webkit-transition:-webkit-transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;-webkit-transform:rotate(180deg);-moz-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg);}</style><style data-emotion="css" data-s="">.css-1grsl84-MuiButtonBase-root-MuiIconButton-root::-moz-focus-inner{border-style:none;}</style><style data-emotion="css" data-s="">.css-1grsl84-MuiButtonBase-root-MuiIconButton-root.Mui-disabled{pointer-events:none;cursor:default;}</style><style data-emotion="css" data-s="">@media print{.css-1grsl84-MuiButtonBase-root-MuiIconButton-root{-webkit-print-color-adjust:exact;color-adjust:exact;}}</style><style data-emotion="css" data-s="">.css-1grsl84-MuiButtonBase-root-MuiIconButton-root:hover{background-color:var(--IconButton-hoverBg);}</style><style data-emotion="css" data-s="">@media (hover: none){.css-1grsl84-MuiButtonBase-root-MuiIconButton-root:hover{background-color:transparent;}}</style><style data-emotion="css" data-s="">.css-1grsl84-MuiButtonBase-root-MuiIconButton-root.Mui-disabled{background-color:transparent;color:rgba(0, 0, 0, 0.26);}</style><style data-emotion="css" data-s="">.css-1f6q371-MuiCollapse-root{height:0;overflow:hidden;-webkit-transition:height 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:height 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;}</style><style data-emotion="css" data-s="">.css-1x6hinx-MuiCollapse-wrapper{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;width:100%;}</style><style data-emotion="css" data-s="">.css-1i4ywhz-MuiCollapse-wrapperInner{width:100%;}</style><style data-emotion="css" data-s="">.css-9ebprp-MuiTypography-root{margin:0;font-family:"Roboto","Helvetica","Arial",sans-serif;font-weight:400;font-size:1rem;line-height:1.5;letter-spacing:0.00938em;margin-bottom:16px;}</style><style data-emotion="css" data-s="">.css-rizt0-MuiTypography-root{margin:0;font-family:"Roboto","Helvetica","Arial",sans-serif;font-weight:400;font-size:1rem;line-height:1.5;letter-spacing:0.00938em;}</style><style data-emotion="css" data-s="">.css-qr6njo-MuiCollapse-root{height:0;overflow:hidden;-webkit-transition:height 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:height 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;height:auto;overflow:visible;}</style><style data-emotion="css" data-s="">.css-cwrbtg-MuiCollapse-root{height:0;overflow:hidden;-webkit-transition:height 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:height 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;visibility:hidden;}</style><style data-emotion="css" data-s="">.css-16xl4zq-MuiTypography-root{margin:0;font-family:"Roboto","Helvetica","Arial",sans-serif;font-weight:400;font-size:1.5rem;line-height:1.334;letter-spacing:0em;}</style><style data-emotion="css" data-s="">.css-fmeqll-MuiAvatar-root{position:relative;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;width:40px;height:40px;font-family:"Roboto","Helvetica","Arial",sans-serif;font-size:1.25rem;line-height:1;border-radius:50%;overflow:hidden;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}</style><style data-emotion="css" data-s="">.css-1su80sj-MuiAvatar-img{width:100%;height:100%;text-align:center;object-fit:cover;color:transparent;text-indent:10000px;}</style><style data-emotion="css" data-s="">.css-18k2bs-MuiAvatar-root{position:relative;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;width:40px;height:40px;font-family:"Roboto","Helvetica","Arial",sans-serif;font-size:1.25rem;line-height:1;border-radius:50%;overflow:hidden;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;color:#fff;background-color:#bdbdbd;}</style><style data-emotion="css" data-s="">.css-utntyq-MuiCardMedia-root{display:block;-webkit-background-size:cover;background-size:cover;background-repeat:no-repeat;-webkit-background-position:center;background-position:center;}</style></head>
+  <body>
+    <div id="root"><div><div><nav class="nav-bar-ul"><div class="navbar"><div class="logo"><a class="active" href="http://localhost:5173/" aria-current="page"><img src="./Vite + React + TS_files/chefs-knife-2d-cartoon-illustraton-on-white-background-hig-free-photo.jpg"></a></div><ul class="nav-bar-ul"><li><a class="" href="http://localhost:5173/contact">Contact Me</a></li><li>|</li><li><a rel="noopener noreferrer" class="" href="https://linktr.ee/feedingfriendsbyross" target="_blank">Social Medias</a></li><li>|</li><li><a class="" href="http://localhost:5173/pasta">Pasta Nights</a></li><li>|</li><li><a class="" href="http://localhost:5173/classes">Cooking Classes</a></li><li>|</li><li><a class="" href="http://localhost:5173/dinner">Dinner Parties</a></li></ul></div></nav></div><div><div><div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1i3faf7-MuiPaper-root-MuiCard-root" style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"><div class="MuiCardHeader-root css-149tc0y-MuiCardHeader-root"><div class="MuiCardHeader-avatar css-1r9wl67-MuiCardHeader-avatar"><div class="MuiAvatar-root MuiAvatar-circular css-fmeqll-MuiAvatar-root"><img alt="ross" src="./Vite + React + TS_files/470218179_122100588824680637_2275294018243586707_n.jpg" class="MuiAvatar-img css-1su80sj-MuiAvatar-img"></div></div><div class="MuiCardHeader-content css-1jkp9bu-MuiCardHeader-content"><span class="MuiTypography-root MuiTypography-body2 MuiCardHeader-title css-7ctihp-MuiTypography-root">My name is Ross and I like to feed people</span></div></div><img class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-1kuwa16-MuiCardMedia-root" src="./Vite + React + TS_files/470191825_122100695108680637_6596305173817143526_n.jpg" height="194" alt="Paella dish"><div class="MuiCardContent-root css-1lt5qva-MuiCardContent-root"><p class="MuiTypography-root MuiTypography-body2 css-1wle3ir-MuiTypography-root">What began as a job as a server has grown into a 20-year passion for feeding people.  My love for customer service and creating delicious meals has led me to bring my expertise directly to you. Drawing from my rich background in professional restaurants I now offer private dining services blending creativity, skill and a love for food to craft memorable moments for every occasion.</p></div><div class="MuiCardActions-root css-bbbzor-MuiCardActions-root"></div></div><div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1i3faf7-MuiPaper-root-MuiCard-root" style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"><div class="MuiCardHeader-root css-149tc0y-MuiCardHeader-root"><div class="MuiCardHeader-avatar css-1r9wl67-MuiCardHeader-avatar"><div class="MuiAvatar-root MuiAvatar-circular css-fmeqll-MuiAvatar-root"><img alt="rack of lamb" src="./Vite + React + TS_files/470137552_122100697424680637_3302725208910782509_n.jpg" class="MuiAvatar-img css-1su80sj-MuiAvatar-img"></div></div><div class="MuiCardHeader-content css-1jkp9bu-MuiCardHeader-content"><span class="MuiTypography-root MuiTypography-body2 MuiCardHeader-title css-7ctihp-MuiTypography-root">Intimate Dinner Parties</span></div></div><div class="MuiCardMedia-root css-utntyq-MuiCardMedia-root"><div class="Slider"><div class="img-container"><img src="./Vite + React + TS_files/steaks.jpg" class="img modal-img"><button type="button" class="btn btn--prev">&lt;</button><button type="button" class="btn btn--next">&gt;</button></div></div></div><div class="MuiCardContent-root css-1lt5qva-MuiCardContent-root"><p class="MuiTypography-root MuiTypography-body2 css-1wle3ir-MuiTypography-root">This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like.</p></div><div class="MuiCardActions-root css-bbbzor-MuiCardActions-root"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-aixiz9-MuiButtonBase-root-MuiIconButton-root" tabindex="0" type="button" aria-label="add to favorites"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="FavoriteIcon"><path d="m12 21.35-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54z"></path></svg></button><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-aixiz9-MuiButtonBase-root-MuiIconButton-root" tabindex="0" type="button" aria-label="share"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ShareIcon"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92-1.31-2.92-2.92-2.92"></path></svg></button><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-17ypfk3-MuiButtonBase-root-MuiIconButton-root" tabindex="0" type="button" aria-expanded="false" aria-label="show more"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ExpandMoreIcon"><path d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"></path></svg></button></div></div><div class="Slider"><div class="img-container"><img src="./Vite + React + TS_files/steaks.jpg" class="img modal-img"><button type="button" class="btn btn--prev">&lt;</button><button type="button" class="btn btn--next">&gt;</button></div></div></div></div></div></div>
+    <script type="module" src="./Vite + React + TS_files/main.tsx"></script>
+  
+
+</body></html>
