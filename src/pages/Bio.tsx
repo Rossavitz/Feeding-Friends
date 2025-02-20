@@ -1,5 +1,5 @@
 import Card from "./Card";
-import steaks from "../photos/steaks.jpg";
+import steaks from "../photos/misc/steaks.png";
 
 export default function Bio() {
   const bObj = {

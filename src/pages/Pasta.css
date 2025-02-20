@@ -1,0 +1,6 @@
+.cards .card-pasta .card-body .card-body-left img {
+  max-width: 300px; /* Ensure it scales with container */
+  width: 100%;
+  height: auto;
+  max-height: auto; /* Optional: Limit height if needed */
+}
